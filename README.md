@@ -1,4 +1,4 @@
-# planed 1.1
+# planed
 * Player health
 * Player Level
 * replace capsule with stickman

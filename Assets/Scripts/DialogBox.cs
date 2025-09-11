@@ -1,16 +1,29 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DialogBox : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    //shows dialog box in trigger zone
+    public GameObject dialogBox;
+    public GameObject player;
+    public GameObject dialogText;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject == player)
+        {
+            dialogBox.SetActive(true);
+            dialogText.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (collision.gameObject == player)
+        {
+            dialogBox.SetActive(false);
+            dialogText.SetActive(false);
+        }
     }
+
 }

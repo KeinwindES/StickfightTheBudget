@@ -3,6 +3,7 @@
 * Player Level
 * replace capsule with stickman
 * Windows release
+* cam follows player
 # latest - 1.0
 * player movement
 * dialog

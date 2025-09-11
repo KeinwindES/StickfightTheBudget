@@ -1,6 +1,7 @@
 # planed 1.1
 * Player health
 * Player Level
+* replace capsule with stickman
 # latest - 1.0
 * player movement
 * dialog

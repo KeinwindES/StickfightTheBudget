@@ -66,5 +66,7 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
     },
-    "dotnet.defaultSolution": "SidescrollUnity2D.sln"
+    "dotnet.defaultSolution": "SidescrollUnity2D.sln",
+    "dotnet.preferCSharpExtension": true,
+    "FSharp.suggestGitignore": false
 }

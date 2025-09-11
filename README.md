@@ -2,6 +2,7 @@
 * Player health
 * Player Level
 * replace capsule with stickman
+* Windows release
 # latest - 1.0
 * player movement
 * dialog

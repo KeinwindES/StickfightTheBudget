@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class SecondPlayerHealth : MonoBehaviour
 {
     public int HP;
     public GameObject Weapon;
@@ -16,7 +16,6 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject == Weapon)
         {
             HP--;
-            Debug.Log(HP);
         }
 
     }

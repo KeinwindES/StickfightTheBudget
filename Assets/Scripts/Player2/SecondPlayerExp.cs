@@ -4,10 +4,12 @@ public class SecondPlayerExp : MonoBehaviour
 {
     public int SPexp;
     public GameObject FPWeapon;
+    
     void Start()
     {
         Debug.Log(SPexp);
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == FPWeapon)
@@ -16,6 +18,7 @@ public class SecondPlayerExp : MonoBehaviour
             Debug.Log(SPexp);
         }
     }
+    
     private void Update()
     {
         if (SPexp == 10)

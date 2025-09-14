@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   FPHP: 10
   SPWeapon: {fileID: 238376041}
-  FPPlayer: {fileID: 783791749}
+  FPPlayer: {fileID: 1854024191}
 --- !u!114 &783791758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3873,8 +3873,8 @@ GameObject:
   - component: {fileID: 1730365341}
   - component: {fileID: 1730365339}
   - component: {fileID: 1730365343}
-  - component: {fileID: 1730365344}
   - component: {fileID: 1730365345}
+  - component: {fileID: 1730365344}
   - component: {fileID: 1730365346}
   - component: {fileID: 1730365347}
   - component: {fileID: 1730365348}
@@ -4120,9 +4120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0887841a1d8c941987bc7bec109072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SecondPlayerHealth
-  FPHP: 10
-  SPWeapon: {fileID: 238376041}
-  FPPlayer: {fileID: 783791749}
+  SPHP: 10
+  FPWeapon: {fileID: 2146239481}
+  SPPlayer: {fileID: 877685259}
 --- !u!1 &1854024191
 GameObject:
   m_ObjectHideFlags: 0

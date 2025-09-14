@@ -1,11 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Add this
+using UnityEngine.InputSystem;
 
-public class SecondPlayerMove: MonoBehaviour
+public class SecondPlayerMove : MonoBehaviour
 {
     public float speed;
     private float move;
-
     private Rigidbody2D rb;
 
     void Start()
@@ -15,7 +14,6 @@ public class SecondPlayerMove: MonoBehaviour
 
     void Update()
     {
-        // Use the new Input System
         move = 0f;
         if (Keyboard.current.wKey.isPressed) move -= 1f;
         if (Keyboard.current.sKey.isPressed) move += 1f; 

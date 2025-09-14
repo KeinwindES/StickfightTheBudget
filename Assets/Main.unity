@@ -1840,9 +1840,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2d6d97cbaa8425c8910d06e4d4d768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  HP: 10
-  Weapon: {fileID: 238376041}
-  Player: {fileID: 1854024191}
+  FPHP: 10
+  SPWeapon: {fileID: 238376041}
+  FPPlayer: {fileID: 783791749}
 --- !u!114 &783791758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3877,6 +3877,7 @@ GameObject:
   - component: {fileID: 1730365345}
   - component: {fileID: 1730365346}
   - component: {fileID: 1730365347}
+  - component: {fileID: 1730365348}
   m_Layer: 0
   m_Name: Body
   m_TagString: NPC
@@ -4105,8 +4106,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aee85e92e62d024092a71edad21741f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SecondPlayerExp
-  exp: 0
-  Weapon: {fileID: 0}
+  SPexp: 0
+  FPWeapon: {fileID: 2146239481}
+--- !u!114 &1730365348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730365338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc0887841a1d8c941987bc7bec109072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SecondPlayerHealth
+  FPHP: 10
+  SPWeapon: {fileID: 238376041}
+  FPPlayer: {fileID: 783791749}
 --- !u!1 &1854024191
 GameObject:
   m_ObjectHideFlags: 0

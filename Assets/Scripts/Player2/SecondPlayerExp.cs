@@ -2,25 +2,25 @@ using UnityEngine;
 
 public class SecondPlayerExp : MonoBehaviour
 {
-    public int exp;
-    public GameObject Weapon;
+    public int SPexp;
+    public GameObject FPWeapon;
     void Start()
     {
-        Debug.Log(exp);
+        Debug.Log(SPexp);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == Weapon)
+        if (collision.gameObject == FPWeapon)
         {
-            exp++;
-            Debug.Log(exp);
+            SPexp++;
+            Debug.Log(SPexp);
         }
     }
     private void Update()
     {
-        if (exp == 10)
+        if (SPexp == 10)
         {
-            Debug.Log("Level Up");
+            Debug.Log("you won");
         }
     }
 }

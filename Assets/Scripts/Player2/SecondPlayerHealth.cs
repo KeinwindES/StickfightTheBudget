@@ -3,27 +3,27 @@ using UnityEngine;
 
 public class SecondPlayerHealth : MonoBehaviour
 {
-    public int HP;
-    public GameObject Weapon;
-    public GameObject Player;
+    public int SPHP;
+    public GameObject FPWeapon;
+    public GameObject SPPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log(HP);
+        Debug.Log(SPHP);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == Weapon)
+        if (collision.gameObject == FPWeapon)
         {
-            HP--;
+            SPHP--;
         }
 
     }
     private void Update()
     {
-        if (HP <= 0)
+        if (SPHP <= 0)
         {
-            Destroy(Player);
+            Destroy(SPPlayer);
         }
     }
 }

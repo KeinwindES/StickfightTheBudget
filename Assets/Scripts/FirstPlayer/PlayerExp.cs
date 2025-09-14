@@ -23,7 +23,7 @@ public class PlayerExp : MonoBehaviour
     {
         if (FPexp == 10)
         {
-            Debug.Log("Level Up");
+            Debug.Log("you won");
         }
     }
 }

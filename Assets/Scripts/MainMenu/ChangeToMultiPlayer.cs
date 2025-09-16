@@ -6,12 +6,8 @@ using UnityEngine.SceneManagement;
 public class ChangeToMultiPlayer : MonoBehaviour
 {
     // Update is called once per frame
-    void Update()
+    public void SwitchScene()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Debug.Log("Switching to Multiplayer");
-            SceneManager.LoadScene("Assets/Scenes/Multplayer.unity");
-        }
+        SceneManager.LoadScene("Assets/Scenes/Multplayer.unity");
     }
 }

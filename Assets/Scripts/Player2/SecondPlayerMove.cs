@@ -15,8 +15,8 @@ public class SecondPlayerMove : MonoBehaviour
     void Update()
     {
         move = 0f;
-        if (Keyboard.current.wKey.isPressed) move -= 1f;
-        if (Keyboard.current.sKey.isPressed) move += 1f; 
+        if (Keyboard.current.jKey.isPressed) move -= 1f;
+        if (Keyboard.current.lKey.isPressed) move += 1f; 
 
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
     }

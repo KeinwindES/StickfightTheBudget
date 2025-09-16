@@ -3,14 +3,14 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 
-public class Quit : MonoBehaviour
+public class ChangeToSinglePlayer : MonoBehaviour
 {
     // Update is called once per frame
     void Update()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Debug.Log("Comming Soon");
+            SceneManager.LoadScene("Assets/Scenes/W1/Lvl1.unity");
         }
     }
 }

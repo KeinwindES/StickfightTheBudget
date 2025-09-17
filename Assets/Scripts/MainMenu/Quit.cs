@@ -6,12 +6,9 @@ using UnityEngine.SceneManagement;
 public class Quit : MonoBehaviour
 {
     // Update is called once per frame
-    void Update()
+    public void ExitGame()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Debug.Log("Quitting Game");
-            Application.Quit();
-        }
+        Application.Quit();
+        Debug.Log("Game is exiting");
     }
 }

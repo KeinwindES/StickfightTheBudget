@@ -4316,7 +4316,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1600454931}
-  - component: {fileID: 1600454930}
+  - component: {fileID: 1600454933}
+  - component: {fileID: 1600454932}
   m_Layer: 0
   m_Name: Sword (1)
   m_TagString: Untagged
@@ -4324,7 +4325,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &1600454930
+--- !u!4 &1600454931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600454929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.027, y: 1.0511298, z: 0}
+  m_LocalScale: {x: 3.7540355, y: 3.7540355, z: 3.7540355}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 956132928}
+  - {fileID: 2146239482}
+  - {fileID: 1080362776}
+  m_Father: {fileID: 1854024192}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!254 &1600454932
+RelativeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600454929}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 2095721205}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: -0.12519884, y: -0.26358294}
+  m_AngularOffset: 0
+--- !u!50 &1600454933
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -4351,24 +4390,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!4 &1600454931
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600454929}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8258888, y: 1.0511298, z: 0}
-  m_LocalScale: {x: 3.7540355, y: 3.7540355, z: 3.7540355}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 956132928}
-  - {fileID: 2146239482}
-  - {fileID: 1080362776}
-  m_Father: {fileID: 1854024192}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660594795
 GameObject:
   m_ObjectHideFlags: 0
@@ -4379,6 +4400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1660594798}
   - component: {fileID: 1660594797}
+  - component: {fileID: 1660594799}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -4431,6 +4453,26 @@ Transform:
   - {fileID: 1012188158}
   m_Father: {fileID: 877685260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!254 &1660594799
+RelativeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660594795}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1121251102}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: 0.6623497, y: -0.29158282}
+  m_AngularOffset: 0
 --- !u!1 &1679814398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,7 +5093,7 @@ Transform:
   m_GameObject: {fileID: 1854024191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.59, y: -1.43, z: 0}
+  m_LocalPosition: {x: -5.85, y: -1.43, z: 0}
   m_LocalScale: {x: 0.26638, y: 0.26638, z: 0.26638}
   m_ConstrainProportionsScale: 0
   m_Children:

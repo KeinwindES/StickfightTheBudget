@@ -259,9 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2764cf72b8ec447f6b96f76f0b4093f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthBar
-  healthBar: {fileID: 225153113}
-  maxHealth: 0
-  currentHealth: 0
+  slider: {fileID: 225153113}
 --- !u!1 &226179197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,9 +2014,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2d6d97cbaa8425c8910d06e4d4d768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  HP: 10
+  SetMaxHealth: 10
+  currentHealth: 0
   Weapon: {fileID: 238376041}
   Player: {fileID: 1854024191}
+  healthBar: {fileID: 2123408082}
 --- !u!114 &783791758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,9 +2045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2764cf72b8ec447f6b96f76f0b4093f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthBar
-  healthBar: {fileID: 2123408081}
-  maxHealth: 10
-  currentHealth: 0
+  slider: {fileID: 2123408081}
 --- !u!1 &795850780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,9 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2764cf72b8ec447f6b96f76f0b4093f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthBar
-  healthBar: {fileID: 0}
-  maxHealth: 0
-  currentHealth: 0
+  slider: {fileID: 0}
 --- !u!1 &877685259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,9 +5082,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2d6d97cbaa8425c8910d06e4d4d768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  HP: 10
+  SetMaxHealth: 10
+  currentHealth: 0
   Weapon: {fileID: 2146239481}
   Player: {fileID: 877685259}
+  healthBar: {fileID: 225153114}
 --- !u!114 &1730365347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5115,9 +5113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2764cf72b8ec447f6b96f76f0b4093f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthBar
-  healthBar: {fileID: 225153113}
-  maxHealth: 10
-  currentHealth: 0
+  slider: {fileID: 225153113}
 --- !u!1 &1854024191
 GameObject:
   m_ObjectHideFlags: 0
@@ -5451,9 +5447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2764cf72b8ec447f6b96f76f0b4093f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthBar
-  healthBar: {fileID: 2123408081}
-  maxHealth: 10
-  currentHealth: 0
+  slider: {fileID: 2123408081}
 --- !u!1 &2146239481
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,7 +42,11 @@ public class PlayerMove : MonoBehaviour
                 isGrounded = false;
             }
         }
-
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+
+        // balance the player rotation
+        if (rb.angularVelocity > 0.1f) rb.angularVelocity -= 0.5f;
+        else if (rb.angularVelocity < -0.1f) rb.angularVelocity += 0.5f;
+        else rb.angularVelocity = 0f;
     }
 }

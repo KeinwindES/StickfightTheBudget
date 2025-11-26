@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -12,41 +13,34 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     public float jumpForce = 5f;
     private bool isGrounded = true;
-
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
 
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        move = context.ReadValue<Vector2>().x;
 
+    }
+    public void OnJump(InputAction.CallbackContext context)
+    {
+       
+
+            
+            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+    
+    }
     void Update()
     {
-        move = 0f;
-        if (playerNumber == 1)
-        {
-            if (Keyboard.current.leftArrowKey.isPressed) move -= 1f;
-            if (Keyboard.current.rightArrowKey.isPressed) move += 1f;
-            if (Keyboard.current.upArrowKey.wasPressedThisFrame && isGrounded)
-            {
-                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-                isGrounded = false;
-            }
-        }
-        else
-        {
-            if (Keyboard.current.aKey.isPressed) move -= 1f;
-            if (Keyboard.current.dKey.isPressed) move += 1f;
-            if (Keyboard.current.wKey.wasPressedThisFrame && isGrounded)
-            {
-                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-                isGrounded = false;
-            }
-        }
+        
+
+        if (Keyboard.current.leftArrowKey.isPressed) move -= 1f;
+        if (Keyboard.current.rightArrowKey.isPressed) move += 1f;
+
+    
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
-        // balance the player rotation
-        if (rb.angularVelocity > 0.1f) rb.angularVelocity -= 0.5f;
-        else if (rb.angularVelocity < -0.1f) rb.angularVelocity += 0.5f;
-        else rb.angularVelocity = 0f;
     }
 }
